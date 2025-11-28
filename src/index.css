@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* GEREZIM Design System - Navy/Gold Theme with Playfair Display
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Navy color palette */
+    --navy-950: 220 45% 8%;
+    --navy-900: 220 40% 12%;
+    --navy-800: 220 35% 16%;
+    --navy-700: 220 30% 24%;
+    --navy-600: 220 25% 32%;
+    
+    /* Gold color palette */
+    --gold-500: 45 100% 51%;
+    --gold-400: 45 95% 58%;
+    --gold-600: 45 90% 45%;
+    
+    /* Semantic colors */
+    --background: 0 0% 100%;
+    --foreground: 220 40% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 40% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 40% 12%;
+
+    --primary: 220 40% 12%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 35% 16%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 220 15% 95%;
+    --muted-foreground: 220 10% 45%;
+
+    --accent: 45 100% 51%;
+    --accent-foreground: 220 40% 12%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 15% 90%;
+    --input: 220 15% 90%;
+    --ring: 45 100% 51%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 220 40% 12%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 220 35% 16%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 35% 16%;
+    --sidebar-accent-foreground: 45 100% 51%;
+    --sidebar-border: 220 30% 18%;
+    --sidebar-ring: 45 100% 51%;
+  }
+
+  .dark {
+    --background: 220 40% 12%;
+    --foreground: 0 0% 95%;
+
+    --card: 220 35% 16%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 220 35% 16%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 45 100% 51%;
+    --primary-foreground: 220 40% 12%;
+
+    --secondary: 220 30% 24%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 220 30% 20%;
+    --muted-foreground: 220 15% 65%;
+
+    --accent: 45 100% 51%;
+    --accent-foreground: 220 40% 12%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 30% 24%;
+    --input: 220 30% 24%;
+    --ring: 45 100% 51%;
+    
+    --sidebar-background: 220 40% 12%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 220 35% 16%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 35% 16%;
+    --sidebar-accent-foreground: 45 100% 51%;
+    --sidebar-border: 220 30% 18%;
+    --sidebar-ring: 45 100% 51%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
